@@ -1,12 +1,12 @@
 import unittest
-from Problema1 import problema1
+from Problema6 import problema6
 
 class TestProblema1(unittest.TestCase):
 
     def test_edad2070(self):
-        p = problema1() 
-        edad = p.edad2070(15)
-        self.assertEquals(edad, 65)
+        p = problema6() 
+        palindromo = p.soyPalindromo("ala")
+        self.assertTrue(palindromo)
         
 if __name__ == "__main__":
     unittest.main()
